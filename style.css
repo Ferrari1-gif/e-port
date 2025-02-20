@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Fixed Sidebar (Left Panel) */
+.sidebar {
+    width: 270px;
+    height: 90vh; /* Adjusted to not touch the bottom fully */
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 50%;
+    left: 20px; /* Spacing from left */
+    transform: translateY(-50%);
+    padding: 20px;
+    text-align: center;
+    border-radius: px; /* Rounded Borders */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: %;
+    border: 3px solid #444;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.sidebar hr {
+    border: 1px solid #444;
+    margin: 10px 0;
+}
+
+.sidebar .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* Main Content Area */
+.content {
+    margin-left: 320px; /* Moves main content away from sidebar */
+    padding: 20px;
+    width: calc(100% - 350px);
+}
+
+/* Navigation Box */
+.nav-box {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 20px; /* Match Sidebar */
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.nav-box nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-box nav a:hover {
+    color: #1e90ff;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-container img {
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 3px solid #444;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Progress Bars */
+.progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+    margin-top: 5px;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+}
+/* Skills Section */
+.skills {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.skills h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Individual Skills */
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Progress Bar */
+.bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+/* Other Skills Section */
+.other-skills {
+    margin-top: 20px;
+}
+
+.other-skills h3 {
+    font-size: 18px;
+    color: #1e90ff;
+}
+.bar {
+    width: 100%;
+    background: #333;
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #3498db;
+    border-radius: 5px;
+}
+.other-skills p {
+    font-size: 16px;
+    color: #bbb;
+.left-frame img {
+    width: 100%; /* Makes the image responsive */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Prevents stretching and distortion */
+    border-radius: 12px; /* Smooth edges like the right frame */
+    display: block;
+}
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    text-align: justify; /* Justify text */
+    gap: 20px; /* Adds spacing between image and text */
+    flex-wrap: wrap; /* Ensures content wraps properly */
+}
+
+.about-text {
+    flex: 1; /* Allows text to take up remaining space */
+    max-width: 600px; /* Prevents text from stretching too wide */
+    line-height: 1.6; /* Improves readability */
+}
+/* Ensure the body takes the full height and centers its content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+.skills {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-about-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-about-container img {
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 3px solid #444;
+}
+.content-image {
+    width: 150px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-container {
+    text-align: left;
+    color: #fff;
+}
+
+.text-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.content-image {
+    width: 100px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #ccc;
+}
